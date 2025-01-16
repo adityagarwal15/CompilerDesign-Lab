@@ -1,10 +1,5 @@
 # **Lab 1: Basic File Handling Operations**
 
-## **Date**:
-_Enter the date when the lab was performed._
-
----
-
 ## **Objectives**:
 - Getting familiar with various file handling system calls.
 - Ability to perform basic file operations in C.
