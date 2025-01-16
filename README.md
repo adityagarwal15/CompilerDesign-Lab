@@ -44,7 +44,7 @@ Throughout this course, I have gained hands-on experience in the following areas
 Let’s stay connected! You can explore my other projects and reach out via:
 
 - 🌟 [GitHub Profile](https://github.com/adityagarwal15)
-- 💼 [LinkedIn Profile](https://www.linkedin.com/in/Aditya Agarwal/)
+- 💼 [LinkedIn Profile](https://www.linkedin.com/in/aditya-agarwal-12601b27b/)
 - 🌐 [Portfolio](https://adityagarwal.netlify.app)
 
 ---
