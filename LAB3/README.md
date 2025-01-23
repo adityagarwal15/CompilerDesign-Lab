@@ -39,7 +39,7 @@ The program generates tokens based on predefined patterns. For example, the lexe
 6. Repeat the process until the end of the file (EOF) is encountered.
 7. Output the identified operators.
 
-> **See the code for the solved exercise here:** [Solved_Exercise](./solved_exercise)
+> **See the code for the solved exercise here:** [Solved_Exercise](./SOLVED_EXERCISE)
 
 ---
 
