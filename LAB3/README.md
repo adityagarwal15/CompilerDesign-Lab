@@ -39,29 +39,34 @@ The program generates tokens based on predefined patterns. For example, the lexe
 6. Repeat the process until the end of the file (EOF) is encountered.
 7. Output the identified operators.
 
+> **See the code for the solved exercise here:** [Solved_Exercise](./solved_exercise)
+
 ---
 
 ## **Lab Exercises**:
-### Write a C program for the following tasks:
 
-1. **Identify and categorize tokens**:
-   - Write functions to identify and categorize the following tokens:
-     - Arithmetic operators (`+`, `-`, `*`, `/`)
-     - Relational operators (`<`, `>`, `<=`, `>=`, `==`, `!=`)
-     - Logical operators (`&&`, `||`, `!`)
-     - Special symbols (e.g., `;`, `,`, `{`, `}`)
-     - Keywords (e.g., `int`, `float`, `if`, `while`)
-     - Numerical constants
-     - String literals
-     - Identifiers
+### **1. Identify and Categorize Tokens**:
+- Write functions to identify and categorize the following tokens:
+  - Arithmetic operators (`+`, `-`, `*`, `/`)
+  - Relational operators (`<`, `>`, `<=`, `>=`, `==`, `!=`)
+  - Logical operators (`&&`, `||`, `!`)
+  - Special symbols (e.g., `;`, `,`, `{`, `}`)
+  - Keywords (e.g., `int`, `float`, `if`, `while`)
+  - Numerical constants
+  - String literals
+  - Identifiers
 
-2. **Design a lexical analyzer**:
-   - Design a lexical analyzer that includes a `getNextToken()` function for processing a simple C program.
-   - The `getNextToken()` function must:
-     - Generate a token structure containing the row number, column number, and token type for each identified token.
-     - Ignore tokens inside single-line or multi-line comments.
-     - Ignore tokens inside string literals.
-     - Strip out preprocessor directives (e.g., `#define`, `#include`).
+> **See the code for Q1 here:** [Q1 codes](./Q1)
+
+### **2. Design a Lexical Analyzer**:
+- Design a lexical analyzer that includes a `getNextToken()` function for processing a simple C program.
+- The `getNextToken()` function must:
+  - Generate a token structure containing the row number, column number, and token type for each identified token.
+  - Ignore tokens inside single-line or multi-line comments.
+  - Ignore tokens inside string literals.
+  - Strip out preprocessor directives (e.g., `#define`, `#include`).
+
+> **See the code for Q2 here:** [Q2 codes](./Q2)
 
 ---
 
