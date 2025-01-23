@@ -1,77 +1,56 @@
-# **Lab 3: Construction of Token Generator**
+# **Lab 2: Preliminary Scanning Applications**
 
 ## **Objectives**:
-- To design a token generator.
-- To recognize various lexemes and generate their corresponding tokens.
+- To understand the basics of the scanning process.
+- Ability to preprocess the input file so that it becomes suitable for compilation.
 
 ---
 
 ## **Prerequisites**:
 - Knowledge of the C programming language.
-- Knowledge of file pointers.
-- Knowledge of data structures.
+- Knowledge of file pointers and string handling functions.
 
 ---
 
 ## **Introduction**:
-In this lab, we focus on lexical analysis, which is the first phase of the compilation process. A lexical analyzer, or scanner, is responsible for recognizing lexemes and converting them into tokens. Tokens are symbolic names for elements of the source program, such as keywords, operators, and identifiers. The task of the lexical analyzer is to read the source code and generate these tokens, which will later be processed by the syntax analyzer.
-
-A **token** is the smallest unit of meaningful data in a program, such as:
-- **Keywords** (e.g., `if`, `int`)
-- **Identifiers** (e.g., variable names)
-- **Constants** (e.g., numbers)
-- **Operators** (e.g., `+`, `-`, `=`)
-
-The program generates tokens based on predefined patterns. For example, the lexeme `if` matches the pattern for the keyword `if`.
+In this lab, we focus on preprocessing an input file so that it becomes suitable for the scanning process. Preprocessing involves removing blank spaces, tabs, preprocessor directives, and comments from the given input C file. This is a crucial step before the compilation phase, where the code is cleaned up for further processing.
 
 ---
 
 ## **Solved Exercise**:
 
-### **Problem**: Identification of Arithmetic and Relational Operators
+### **Problem**: Removal of Single and Multiline Comments
 
 #### **Algorithm**:
 1. Open the input C file in read mode.
-2. Check if the file exists; display an error message if it doesn't.
-3. Read each character from the input file.
-4. If the character is '=', check if the next character is also '='. If so, identify it as a relational operator, otherwise as an assignment operator.
-5. If the character is '<', '>', or '!', check for '=' in the next character to identify relational operators like LTE, GTE, or NE.
-6. Repeat the process until the end of the file (EOF) is encountered.
-7. Output the identified operators.
-
-> **See the code for the solved exercise here:** [solved_exercise folder](./SOLVED_EXERCISE)
+2. Check if the file exists. If it doesn’t exist, display an error message and exit.
+3. Open the output file in write mode.
+4. Read each character from the input file.
+5. If the character is '/', check if it is a start of a comment.
+   - If the next character is '/', continue reading until a newline is encountered.
+   - If the next character is '*', continue reading until the next '*' and check for a '/'. 
+6. If it's not a comment, write the character to the output file.
+7. Repeat the process until the end of the file (EOF).
+8. Close both files.
 
 ---
 
 ## **Lab Exercises**:
+### Write a C program for the following tasks:
 
-### **1. Identify and Categorize Tokens**:
-- Write functions to identify and categorize the following tokens:
-  - Arithmetic operators (`+`, `-`, `*`, `/`)
-  - Relational operators (`<`, `>`, `<=`, `>=`, `==`, `!=`)
-  - Logical operators (`&&`, `||`, `!`)
-  - Special symbols (e.g., `;`, `,`, `{`, `}`)
-  - Keywords (e.g., `int`, `float`, `if`, `while`)
-  - Numerical constants
-  - String literals
-  - Identifiers
+1. **Replace blank spaces and tabs with a single space**:
+   - Take a file as input and preprocess it to replace all blank spaces and tabs with a single space. Write the output to a new file.
 
-> **See the code for Q1 here:** [q1 folder](./Q1)
+2. **Discard Preprocessor Directives**:
+   - Write a program that removes preprocessor directives (like #include, #define, etc.) from a given C file.
 
-### **2. Design a Lexical Analyzer**:
-- Design a lexical analyzer that includes a `getNextToken()` function for processing a simple C program.
-- The `getNextToken()` function must:
-  - Generate a token structure containing the row number, column number, and token type for each identified token.
-  - Ignore tokens inside single-line or multi-line comments.
-  - Ignore tokens inside string literals.
-  - Strip out preprocessor directives (e.g., `#define`, `#include`).
-
-> **See the code for Q2 here:** [q2 folder](./Q2)
+3. **Recognize C Keywords and Print Them in Uppercase**:
+   - Take a C program as input, identify all the keywords, and print them in uppercase in the output.
 
 ---
 
 ## **Conclusion**:
-This lab introduces you to the concept of lexical analysis and token generation, which are essential steps in the compilation process. You learned how to design a token generator, recognize lexemes, and generate tokens for different components of a C program. These exercises are foundational in understanding how compilers analyze source code.
+This lab focused on the basics of scanning and preprocessing files for compilation. It involved removing comments, blank spaces, and preprocessor directives, as well as recognizing and modifying C keywords. These tasks are vital in understanding the preprocessing phase in compiler design.
 
 ---
 
