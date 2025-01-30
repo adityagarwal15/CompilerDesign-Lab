@@ -1,5 +1,10 @@
 # **LAB 4: CONSTRUCTION OF SYMBOL TABLE**
 
+## **Question**:
+Using `getNextToken()` implemented in Lab No 3, design a Lexical Analyser to implement the single symbol table using closed hashing.
+
+---
+
 ## **Objectives**:
 - To design a lexical analyzer.
 - To recognize various lexemes and generate their corresponding tokens.
@@ -31,6 +36,25 @@ A **hash table** is commonly used for symbol table implementation due to its fas
 ---
 
 ## **Expected Output**:
+
+```c
+// Output Format:
+// Index   Name          Type    Size
+// -----   ----          ----    ----
+// 1       id            int     4
+// 2       name          char    1
+// 3       marks         float   8
+// 4       a             int     4
+// 5       b             int     4
+// 6       count         int     4
+// 7       temperature   float   8
+// 8       grade         char    1
+// 9       numbers       int     4
+// 10      ptr           int     4
+// 11      i             int     4
+// 12      result        int     4
+// 13      a             int     4
+// 14      b             int     4
 
 ---
 
