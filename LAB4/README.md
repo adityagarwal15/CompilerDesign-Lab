@@ -55,7 +55,7 @@ A **hash table** is commonly used for symbol table implementation due to its fas
 // 12      result        int     4
 // 13      a             int     4
 // 14      b             int     4
-
+```
 ---
 
 ## **Conclusion**:
