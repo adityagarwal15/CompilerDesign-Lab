@@ -73,7 +73,8 @@ sudo apt-get install flex
 
 For each .l file, use the following commands to compile and run the program:
 
-```flex <filename>.l
+```bash
+flex <filename>.l
 gcc lex.yy.c -o <output_program_name> -lfl
 ./<output_program_name> <input_file> <output_file>
 ```
