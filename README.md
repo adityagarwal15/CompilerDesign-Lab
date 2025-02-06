@@ -102,7 +102,7 @@ In **Lab 5**, I used **Flex** to write programs that perform lexical analysis. K
 - 🧮 **Creating a Lexical Analyzer**: Writing a lexer to tokenize source code using Flex.
 - 🔢 **Pattern Recognition**: Recognizing and generating tokens for keywords, operators, etc.
 
-### 📂 [Explore Lab 5 in Detail](./LAB5)
+### 📂 [Explore Lab 5 in Detail](./Lab5)
 
 ---
 
