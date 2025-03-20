@@ -109,13 +109,8 @@ To evaluate a postfix expression:
 
 postfix 2 3 4 * +
 
-
-
-
-
 ---
 
-You can copy and paste this code into your `README.md` file. It should provide a complete, clear, and professional overview of your **Lab 10 - Programs on Bison** repository. Let me know if you need any further modifications!
 
 
 
